@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GÖRÜNGÜ | Deney Destek Uygulaması</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/landing.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="brand">
+                <img src="images/uygulama_ikon.png" alt="Görüngü" class="brand-logo">
+                Görüngü
+            </a>
+            <button class="menu-toggle" aria-label="Menüyü aç/kapat">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <a href="#ozellikler">Sistem</a>
+                    <a href="#guvenlik">Donanım</a>
+                    <a href="#beklentiler">Uygulama</a>
+                    <a href="#destek">Destek</a>
+                    <a href="#indir">İndir</a>
+                </div>
+                <div class="nav-cta">
+                    <a href="#indir" class="btn btn-primary btn-compact">Android’i indir</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="container hero">
+            <div class="hero-content">
+                <span class="hero-tag">Görme engelli öğrenciler için haptik öğrenme desteği</span>
+                <h1><span>Görüngü</span>Kimyasal değişim, hissedilebilir bir veri.</h1>
+                <p class="hero-lead">
+                    Görüngü, görme engelli öğrencilerin deney sürecine bağımsız katılımını güçlendiren haptik bir
+                    bileklik ve
+                    eşlik eden mobil uygulamadır. Altı sensörden alınan veriler ESP32 ve ESP-NOW ile bilekliğe taşınır;
+                    pH, renk,
+                    sıcaklık, gaz ve bulanıklık değişimleri bilekte anlaşılır titreşim desenlerine dönüşür. Uygulama ise
+                    adım akışı,
+                    güvenlik uyarıları ve sesli komutlarla deneyin kontrolünü öğrencinin elinde tutar.
+                </p>
+                <div class="hero-tags">
+                    <span class="hero-tag">🧪 6 sensör</span>
+                    <span class="hero-tag">📡 ESP-NOW</span>
+                    <span class="hero-tag">📳 Haptik bileklik</span>
+                    <span class="hero-tag">🎓 9-10. sınıf deneyleri</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="#indir" class="btn btn-primary">Android paketini indir</a>
+                    <a href="#ozellikler" class="btn btn-outline">Sistemi Keşfet</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="screenshot-stack">
+                    <div class="screenshot-card">
+                        <span class="screenshot-tag">Deney videosu</span>
+                        <img src="images/ss-video.png.png" alt="Bakır Nanoparçacık deneyi video ekranı"
+                            data-fallback="data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22540%22 height=%221020%22 viewBox=%220 0 540 1020%22%3E%3Crect width=%22540%22 height=%221020%22 rx=%2232%22 fill=%22%23f1f3f7%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23666%22 font-family=%22Arial%22 font-size=%2222%22%3EVideo ekran g%C3%B6r%C3%BCnt%C3%BCs%C3%BC eklenecek%3C/text%3E%3C/svg%3E">
+                    </div>
+                    <div class="screenshot-card small">
+                        <span class="screenshot-tag">Güvenlik kontrolü</span>
+                        <img src="images/ss-guvenlik.png.png" alt="Güvenlik kontrolü penceresi"
+                            data-fallback="data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22360%22 height=%22760%22 viewBox=%220 0 360 760%22%3E%3Crect width=%22360%22 height=%22760%22 rx=%2228%22 fill=%22%23f1f3f7%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23666%22 font-family=%22Arial%22 font-size=%2218%22%3EG%C3%BCvenlik penceresi g%C3%B6r%C3%BCnt%C3%BCs%C3%BC eklenecek%3C/text%3E%3C/svg%3E">
+                    </div>
+                    <div class="screenshot-card splash">
+                        <span class="screenshot-tag">Açılış</span>
+                        <img src="images/splash-screen.png" alt="Görüngü açılış ekranı">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="ozellikler" class="container section-padding">
+            <div class="section-header">
+                <h2>Sistem nasıl çalışır</h2>
+                <p>Sensör verisi toplanır, kablosuz aktarılır ve öğrencinin bileğinde titreşime dönüşür.</p>
+            </div>
+            <div class="grid-features">
+                <div class="feature-card">
+                    <span class="feature-icon">🧪</span>
+                    <h3>Altı sensörle ölçüm</h3>
+                    <p>pH, iletkenlik, sıcaklık, bulanıklık, gaz ve renk sensörleri deney boyunca veri toplar.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📡</span>
+                    <h3>ESP32 + ESP-NOW</h3>
+                    <p>Arduino Mega’dan gelen veriler ESP32 ile kablosuz olarak bilekliğe aktarılır.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📳</span>
+                    <h3>Haptik geri bildirim</h3>
+                    <p>Bileklikteki 3 titreşim motoru, kimyasal değişimleri eş zamanlı olarak hissettirir.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🧰</span>
+                    <h3>Deney seti</h3>
+                    <p>9 ve 10. sınıf müfredatından seçilen deneyler, kimyasallar, ekipmanlar ve modellemeler aynı
+                        sette.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Section -->
+        <section id="guvenlik" class="container section-padding">
+            <div class="safety-container">
+                <div class="safety-text">
+                    <h2 class="safety-title">Bileklik tasarımı</h2>
+                    <p class="safety-lead">
+                        Görüngü iki parçadan oluşur: kasa ve kayış. Kasa; ESP32, 3.7 V 1500 mAh Li-Po pil ve Type-C şarj
+                        devresini içerir.
+                        Kayış; 3 titreşim motoru, transistörler, 4.7 kΩ dirençler ve bağlantı kablolarıyla tek yüzeyde
+                        toplanır.
+                    </p>
+                </div>
+                <div class="safety-modal-view">
+                    <h3>Sensör kutusu</h3>
+                    <p class="safety-modal-lead">Sensörlerin güvenliği ve arızaların hızlı giderimi için tasarlandı.</p>
+                    <ul class="safety-list">
+                        <li>
+                            <div class="icon-box">🔧</div> Arduino Mega ve ESP32 kart
+                        </li>
+                        <li>
+                            <div class="icon-box">🧪</div> pH, iletkenlik, sıcaklık, bulanıklık, gaz ve renk sensörleri
+                        </li>
+                        <li>
+                            <div class="icon-box">💡</div> Çalışma durumunu gösteren LED’ler
+                        </li>
+                        <li>
+                            <div class="icon-box">🧱</div> İç altıgen PLA (3D baskı), dış altıgen pleksi
+                        </li>
+                        <li>
+                            <div class="icon-box">📐</div> Tinkercad üzerinden tasarım
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expectations -->
+        <section id="beklentiler" class="container section-padding">
+            <div class="section-header">
+                <h2>Uygulama özellikleri</h2>
+                <p>Deney akışını yönetmek, güvenliği hatırlatmak ve haptik geri bildirimi senkronlamak için tasarlandı.
+                </p>
+            </div>
+            <div class="grid-features">
+                <div class="feature-card">
+                    <span class="feature-icon">🎞️</span>
+                    <h3>Zaman kodlu deney akışı</h3>
+                    <p>Video adımları ve gözlem notları saniye bazında eşlenir, deneyin ritmi kaybolmaz.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📳</span>
+                    <h3>Haptik geri bildirim</h3>
+                    <p>Sensör eşikleri ve adım tetikleri bileklikteki motorlara net bir dokunsal dil olarak aktarılır.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎙️</span>
+                    <h3>Sesli komut ve TTS</h3>
+                    <p>“Sonraki adım” gibi komutlarla ilerle, kritik uyarıları sesli olarak dinle.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🛡️</span>
+                    <h3>Güvenlik ve GHS ikonları</h3>
+                    <p>Deney öncesi güvenlik modalları ve risk ikonlarıyla güvenli başlatma sağlanır.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📚</span>
+                    <h3>Rehber ve içerik kütüphanesi</h3>
+                    <p>Öğretmen/öğrenci kitapçıkları ve deney açıklamaları tek bir arayüzde toplanır.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🔧</span>
+                    <h3>Sensör ve BLE izleme</h3>
+                    <p>Sensör verileri ve bileklik bağlantısı uygulama üzerinden takip edilir.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download -->
+        <section id="indir" class="container section-padding">
+            <div class="section-header">
+                <h2>Uygulamayı hemen kur</h2>
+                <p>Görüngü uygulamasını Android cihazına indirip kurun. APK dosyası harici bağlantı üzerinden sağlanır.
+                </p>
+            </div>
+            <div class="download-grid">
+                <div class="download-card">
+                    <span class="version-tag">KARARLI SÜRÜM 1.0.0</span>
+                    <img src="images/android-icon.webp" alt="Android simgesi" class="download-icon">
+                    <h3 class="download-title">Android kurulum paketi (APK)</h3>
+                    <p class="download-copy">Android cihazlar için kurulum dosyası. İndirme bağlantısı dış kaynak
+                        üzerinden sağlanır.</p>
+                    <a href="https://github.com/gorungu/web/releases/download/v1.0.0/app-release.apk"
+                        class="btn btn-primary btn-full" data-download-modal="apk-info">Şimdi indir</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support -->
+        <section id="destek" class="container section-padding">
+            <div class="section-header">
+                <h2>Kurulum desteği</h2>
+                <p>APK kurulumu sırasında karşılaşabileceğiniz sorunlar ve net çözümler.</p>
+            </div>
+            <div class="support-list">
+                <details class="support-item">
+                    <summary>“Bilinmeyen kaynaklar engellendi” uyarısı</summary>
+                    <p class="support-answer">Ayarlar &gt; Güvenlik / Gizlilik &gt; Bilinmeyen uygulamalar bölümünden
+                        kullandığınız dosya yöneticisine veya tarayıcıya izin verin.</p>
+                </details>
+                <details class="support-item">
+                    <summary>“Uygulama yüklenmedi” hatası</summary>
+                    <p class="support-answer">Dosya bozuk inmiş olabilir. APK’yı yeniden indirin. Eski sürüm yüklüyse
+                        kaldırıp tekrar deneyin.</p>
+                </details>
+                <details class="support-item">
+                    <summary>Play Protect engelliyor</summary>
+                    <p class="support-answer">Play Protect uyarısında “Yine de yükle” seçeneğini seçin veya Play Protect
+                        taramasını geçici olarak kapatın.</p>
+                </details>
+                <details class="support-item">
+                    <summary>Depolama alanı yetersiz</summary>
+                    <p class="support-answer">Telefonunuzda yeterli boş alan bırakın. Gereksiz uygulamaları kaldırıp
+                        tekrar kurmayı deneyin.</p>
+                </details>
+                <details class="support-item">
+                    <summary>İndirme tamamlanmıyor</summary>
+                    <p class="support-answer">Bağlantıyı kontrol edin. Farklı bir tarayıcıyla tekrar indirin ve dosya
+                        boyutunun sıfır olmadığını doğrulayın.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <img src="https://izmirkizlisesi.meb.k12.tr/meb_iys_dosyalar/35/01/320178/resimler/2025_08/k_15150846_logo.jpg"
+                alt="Izmir Kiz Lisesi logo" class="footer-logo">
+        </div>
+    </footer>
+
+    <div class="modal-backdrop" id="apk-download-modal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="apk-modal-title"
+            aria-describedby="apk-modal-desc">
+            <button class="modal-close" type="button" aria-label="Kapat" data-modal-close>&times;</button>
+            <h3 id="apk-modal-title">Android yükleme bilgisi</h3>
+            <div id="apk-modal-desc" class="modal-body">
+                <p class="modal-lead">
+                    Bu APK <span class="modal-highlight">harici kaynaktan</span> indiriliyor. Kurulum için telefonunuzda
+                    gerekli izni açmanız gerekir.
+                </p>
+                <ul class="modal-list">
+                    <li><span class="modal-key">Ayarlar</span> &gt; <span class="modal-key">Güvenlik / Gizlilik</span>
+                    </li>
+                    <li><span class="modal-key">Bilinmeyen uygulamalar</span> veya <span class="modal-key">Bu kaynaktan
+                            yüklemeye izin ver</span></li>
+                    <li><span class="modal-key">Dosya yöneticisi / tarayıcı</span> için izin verin</li>
+                </ul>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-primary modal-ack" type="button" data-modal-confirm>Tamam</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
